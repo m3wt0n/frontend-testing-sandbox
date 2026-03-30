@@ -36,8 +36,8 @@
 		"@types/react": "^18.3.1",
 		"@types/react-dom": "^18.3.1",
 		"@vitejs/plugin-react": "^4.3.1",
-		"@vitest/coverage-v8": "^2.0.5",
-		"@vitest/ui": "^2.0.5",
+		"@vitest/coverage-v8": "^4.1.2",
+		"@vitest/ui": "^4.1.2",
 		"chromatic": "^11.5.4",
 		"jsdom": "^25.0.1",
 		"lefthook": "^2.1.4",
@@ -45,8 +45,8 @@
 		"msw-storybook-addon": "^2.0.3",
 		"storybook": "^8.2.8",
 		"typescript": "^5.5.3",
-		"vite": "^5.3.4",
-		"vitest": "^2.0.5"
+		"vite": "^8.0.3",
+		"vitest": "^4.1.2"
 	},
 	"msw": {
 		"workerDirectory": [
