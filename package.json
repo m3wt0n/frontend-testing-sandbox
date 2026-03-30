@@ -1,0 +1,56 @@
+{
+	"name": "frontend-testing-sandbox",
+	"version": "0.1.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"preview": "vite preview",
+		"test": "vitest",
+		"test:ui": "vitest --ui",
+		"test:coverage": "vitest run --coverage",
+		"test:storybook": "test-storybook",
+		"test:e2e": "playwright test",
+		"test:visual": "playwright test e2e/visual",
+		"storybook": "storybook dev -p 6006",
+		"build-storybook": "storybook build",
+		"chromatic": "chromatic --project-token=$CHROMATIC_PROJECT_TOKEN",
+		"postinstall": "lefthook install"
+	},
+	"dependencies": {
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.4.9",
+		"@playwright/test": "^1.45.3",
+		"@storybook/addon-essentials": "^8.2.8",
+		"@storybook/addon-interactions": "^8.2.8",
+		"@storybook/react": "^8.2.8",
+		"@storybook/react-vite": "^8.2.8",
+		"@storybook/test": "^8.2.8",
+		"@storybook/test-runner": "^0.19.1",
+		"@testing-library/jest-dom": "^6.4.6",
+		"@testing-library/react": "^16.0.0",
+		"@testing-library/user-event": "^14.5.2",
+		"@types/react": "^18.3.1",
+		"@types/react-dom": "^18.3.1",
+		"@vitejs/plugin-react": "^4.3.1",
+		"@vitest/coverage-v8": "^2.0.5",
+		"@vitest/ui": "^2.0.5",
+		"chromatic": "^11.5.4",
+		"jsdom": "^25.0.1",
+		"lefthook": "^2.1.4",
+		"msw": "^2.3.5",
+		"msw-storybook-addon": "^2.0.3",
+		"storybook": "^8.2.8",
+		"typescript": "^5.5.3",
+		"vite": "^5.3.4",
+		"vitest": "^2.0.5"
+	},
+	"msw": {
+		"workerDirectory": [
+			"public"
+		]
+	}
+}
